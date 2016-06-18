@@ -38,16 +38,26 @@ let mapleader = ','
 
 nnoremap ; :
 
-" Things that I never want uppercase
-cmap W w
-cmap WQ wq
-cmap wQ wq
-cmap Q q
-cmap X x
+" Treat long lines as break lines (useful when moving around in them)
+map j gj
+map k gk
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
+" Search and replace the word under the cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " QuickFix Next/Previous
 map <C-j> :cn<CR>
 map <C-k> :cp<CR>
+
+" Fast saving
+nmap <leader>w :w!<cr>
 
 " Buffer navigation
 nnoremap <F5> :buffers<CR>:buffer<Space>
@@ -56,6 +66,9 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 "===============================================================================
 
 set autoindent
+
+" Set to auto read when a file is changed from the outside
+set autoread
 
 " Indent by 2 spaces
 set shiftwidth=2
