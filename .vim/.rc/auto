@@ -1,0 +1,5 @@
+" Automatically write a file when leaving a modified buffer
+set autochdir
+
+" Remove trailing spaces
+autocmd FileType go,c,cpp,java autocmd BufWritePre <buffer> :%s/\s\+$//e

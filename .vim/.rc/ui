@@ -1,0 +1,67 @@
+" Colours
+"===============================================================================
+
+syntax on
+set background=dark
+colorscheme solarized
+
+" Force a colour mode
+if !has('gui_running')
+    set t_Co=256
+endif
+
+let g:solarized_termcolors=256
+
+" Elements
+"===============================================================================
+
+set showmode 
+
+set cursorline
+
+" Line numbers
+set nu 
+
+" Matching bracked/parenthesis
+set showmatch
+
+" Show the list instead of just auto-completing commands
+set wildmenu
+
+" Expand the status bar to always show it.
+set laststatus=2
+
+" Navigation 
+"===============================================================================
+
+let mapleader = ','
+
+nnoremap ; :
+
+" Things that I never want uppercase
+cmap W w
+cmap WQ wq
+cmap wQ wq
+cmap Q q
+cmap X x
+
+" QuickFix Next/Previous
+map <C-j> :cn<CR>
+map <C-k> :cp<CR>
+
+" Buffer navigation
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" Behaviour
+"===============================================================================
+
+set autoindent
+
+" Indent by 2 spaces
+set shiftwidth=2
+set softtabstop=2
+" But still keep hard tabs visible
+set tabstop=8
+
+" Expand tabs to spaces
+set expandtab
