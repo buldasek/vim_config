@@ -8,6 +8,8 @@ Glug blaze plugin[mappings]='<leader>b'
 
 Glug codefmt plugin[mappings]
 Glug codefmt-google enable_gclfmt
+Glug csearch
+Glug grok
 
 Glug relatedfiles plugin[mappings]
 
