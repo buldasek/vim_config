@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/google/src/cloud/bul/first_client/google3/experimental/adspam/bunyan/snippets/test'
+let g:netrw_dirhist_2='/google/src/cloud/bul/emily_oneoffs/google3/production/borgcron/prod/adspam-bunyan'

@@ -1,4 +1,5 @@
 source /usr/share/vim/google/google.vim
+source /usr/share/vim/google/glug/bootstrap.vim
 
 " Glug
 " =============================================================================
